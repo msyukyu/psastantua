@@ -6,7 +6,7 @@
 /*   By: dabeloos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/11 12:29:57 by dabeloos          #+#    #+#             */
-/*   Updated: 2018/08/12 00:37:19 by dabeloos         ###   ########.fr       */
+/*   Updated: 2018/08/12 01:34:13 by dabeloos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,18 +16,6 @@ int		ft_putchar(char c)
 {
 	write(1, &c, 1);
 	return (0);
-}
-
-int		ft_ignore_space(const char *str)
-{
-	int i;
-
-	i = 0;
-	while (str[i] == ' ')
-	{
-		i++;
-	}
-	return (i);
 }
 
 int		ft_atoi(const char *str)
@@ -106,7 +94,7 @@ void	sastantua(int size)
 						door_size / 2 > 0 &&
 						c != length / 2)
 					ft_putchar('$');
-				else if (c >= length / 2 - door_size / 2 && 
+				else if (c >= length / 2 - door_size / 2 &&
 						c <= length / 2 + door_size / 2 &&
 						l >= height - door_size &&
 						l <= height)
