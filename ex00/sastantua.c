@@ -6,7 +6,7 @@
 /*   By: dabeloos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/11 12:29:57 by dabeloos          #+#    #+#             */
-/*   Updated: 2018/08/11 16:56:55 by dabeloos         ###   ########.fr       */
+/*   Updated: 2018/08/11 17:27:36 by dabeloos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int		main(int argc, char *argv[])
 {
 	int i;
 
-	i = argv[1] - 
-	sastantua(argv[1]);
+	i = *argv[1] - '0';
+	sastantua(i);
 	return (0);
 }
