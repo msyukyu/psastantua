@@ -6,37 +6,11 @@
 /*   By: dabeloos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/11 12:29:57 by dabeloos          #+#    #+#             */
-/*   Updated: 2018/08/12 02:53:15 by dabeloos         ###   ########.fr       */
+/*   Updated: 2018/08/12 08:24:49 by dabeloos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_putchar(char c);
-
-int		ft_atoi(const char *str)
-{
-	int		result;
-	int		sign;
-	int		i;
-
-	result = 0;
-	i = 0;
-	sign = 1;
-	while (str[i] == ' ')
-		i++;
-	if (str[i] == '+')
-		i++;
-	else if (str[i] == '-')
-	{
-		i++;
-		sign = -1;
-	}
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		result = result * 10 + str[i] - '0';
-		i++;
-	}
-	return (sign * result);
-}
 
 void	ft_define_var(int size, int *var)
 {
@@ -124,16 +98,4 @@ void	sastantua(int size)
 			ft_putchar('\n');
 		}
 	}
-}
-
-int		main(int argc, char *argv[])
-{
-	int i;
-
-	if (argc == 2)
-	{
-		i = ft_atoi(argv[1]);
-		sastantua(i);
-	}
-	return (0);
 }
